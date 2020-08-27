@@ -13,6 +13,7 @@
           <b-col sm="3">
             <label> <b-icon icon="calendar2-check"></b-icon> 出發時間</label>
             <client-only>
+              <no-ssr>
                   <v-date-picker
                   mode='range'
                   v-model='search_date_range'
@@ -20,6 +21,7 @@
                     placeholder: "選擇時間",
                   }'
                   />
+              </no-ssr>
             </client-only>
           </b-col>
           <b-col sm="3">

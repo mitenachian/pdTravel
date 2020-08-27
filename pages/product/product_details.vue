@@ -71,6 +71,7 @@
                         <h4>其它出發日</h4>
                     <b-row>
                         <b-col>
+                            <no-ssr>
                             <v-calendar
                                 class="custom-calendar"
                                 :attributes="attributes"
@@ -96,6 +97,7 @@
                                     </div>
                                 </div>
                             </v-calendar>
+                            </no-ssr>
                         </b-col>
                     </b-row>
                     </b-col>
