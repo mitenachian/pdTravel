@@ -2,7 +2,6 @@
 // only add `router.base = '/<repository_name>/'` if `DEPLOY_ENV` is `GH_PAGES`
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
-    mode: 'hash',
     base: '/pdTravel/'
   }
 } : {}
