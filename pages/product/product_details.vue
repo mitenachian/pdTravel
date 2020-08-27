@@ -45,10 +45,10 @@
                             <b-row>
                                 <div class="box2_item">
                                 <b-col>分享到:
-                                    <img src="~static/facebook.png"/>
-                                    <img src="~static/instagram-sketched.png"/>
-                                    <img src="~static/line.png"/>
-                                    <img src="~static/twitter.png"/>
+                                    <img src="/facebook.png"/>
+                                    <img src="/instagram-sketched.png"/>
+                                    <img src="/line.png"/>
+                                    <img src="/twitter.png"/>
                                 </b-col>
                                 </div>
                             </b-row>

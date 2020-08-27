@@ -3,9 +3,9 @@
     <Nuxt />
     <div class="scrolltoTop box_shadow" v-show="backFlag" @click="backTop()"><b-icon scale="2"  icon="arrow-up"></b-icon></div>
     <div class="social_med box_shadow">
-         <div><a href="https://mitenachian.github.io/pdTravel/" target="_blank"> <img src="~static/facebook_32.png"> </a></div>
-         <div><a href="https://mitenachian.github.io/pdTravel/" target="_blank"> <img src="~static/line_32.png"> </a></div>
-         <div><a href="https://www.youtube.com/channel/UCQYtPx8eAiibthaLFwSPIxg" target="_blank"> <img src="~static/youtube_32.png"> </a></div>
+         <div><a href="https://mitenachian.github.io/pdTravel/" target="_blank"> <img src="/facebook_32.png"> </a></div>
+         <div><a href="https://mitenachian.github.io/pdTravel/" target="_blank"> <img src="/line_32.png"> </a></div>
+         <div><a href="https://www.youtube.com/channel/UCQYtPx8eAiibthaLFwSPIxg" target="_blank"> <img src="/youtube_32.png"> </a></div>
     </div>
   </div>
 </template>

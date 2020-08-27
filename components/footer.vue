@@ -12,25 +12,25 @@
     <b-container fluid id="mid_footer">
       <b-row>
         <b-col cols="12" md="3" lg="3">
-          <nuxt-link to="/"><img src="~static/footerlogo.svg"></nuxt-link>
+          <nuxt-link to="/"><img src="/footerlogo.svg"></nuxt-link>
           <p>甲種旅行社-交觀甲8340號 <br/>
           品保協會會員-品保北2498號</p>
         </b-col>
         <b-col cols="12" md="3" lg="3">
           <div class="align_center">
           <h5 style="color:#00A0E8">彭大家族旅行社有限公司</h5>
-            <li><a href="https://line.me/R/ti/p/@pdtravel" target="_blank"><img src="~static/line.svg" width="18px"> @pdtravel</a></li>
+            <li><a href="https://line.me/R/ti/p/@pdtravel" target="_blank"><img src="/line.svg" width="18px"> @pdtravel</a></li>
             <li><a href="mailto:service@pdtravel.com.tw" target="_blank"><b-icon icon="envelope-fill"></b-icon> service@pdtravel.com.tw</a></li>
             <li><a href="#" target="_blank"><b-icon icon="geo-alt"></b-icon> 新北市永和區智光街32巷3號</a></li>
             <li><a href="mailto:annie@pdtravel.com.tw" target="_blank"><b-icon icon="person-check-fill"></b-icon> 網站連絡人:陳詠菁 annie@pdtravel.com.tw</a></li>
           </div>
         </b-col>
         <b-col cols="12" md="3" lg="3">
-          <img src="~static/footer-banner.jpg">
+          <img src="/footer-banner.jpg">
         </b-col>
         <b-col cols="12" md="3" lg="3">
-          <div><img src="~static/footer-slogo01.png"><img src="~static/footer-slogo02.png"></div>
-          <div><img src="~static/footer-slogo04.png"><img src="~static/footer-slogo05.png"></div>
+          <div><img src="/footer-slogo01.png"><img src="/footer-slogo02.png"></div>
+          <div><img src="/footer-slogo04.png"><img src="/footer-slogo05.png"></div>
         </b-col>
       </b-row>
     </b-container>

@@ -9,7 +9,7 @@
   <!-- As a link -->
   <b-navbar toggleable="sm"  type="dark" variant="primary">
     <b-navbar-brand>
-      <nuxt-link to="/"><img src="~static/toplogo.svg" height="50px" alt=" 彭大家族旅遊社團"></nuxt-link>
+      <nuxt-link to="/"><img src="/toplogo.svg" height="50px" alt=" 彭大家族旅遊社團"></nuxt-link>
     </b-navbar-brand>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -106,7 +106,7 @@ a {
 }
 @media screen and (min-width:1024px){
   .navbar{
-    background-image: url('~static/travel_together.svg');
+    background-image: url('/travel_together.svg');
     background-repeat: no-repeat;
     background-position: 20% 0%;
     background-color: rgb(0, 160, 232) !important;
