@@ -1,0 +1,10 @@
+.page-enter-active,.page-leave-active{
+    transition: opacity 0.5s;
+    transition-timing-function: linear;
+}
+.page-enter,.page-leave-active{
+    opacity: 0;
+}
+.box_shadow{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
