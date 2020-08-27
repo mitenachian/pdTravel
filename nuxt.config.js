@@ -1,7 +1,6 @@
 
 // only add `router.base = '/<repository_name>/'` if `DEPLOY_ENV` is `GH_PAGES`
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  
   router: {
     base: '/pdTravel/'
   }
@@ -16,7 +15,7 @@ export default {
   ** Nuxt target
   ** See https://nuxtjs.org/api/configuration-target
   */
-  target: 'static',
+ target: 'server',
   /*
   ** Headers of the page
   ** See https://nuxtjs.org/api/configuration-head
