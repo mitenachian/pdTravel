@@ -3,9 +3,9 @@
     <Nuxt />
     <div class="scrolltoTop box_shadow" v-show="backFlag" @click="backTop()"><b-icon scale="2"  icon="arrow-up"></b-icon></div>
     <div class="social_med box_shadow">
-         <div><a href="https://www.facebook.com/groups/OKASOS/" target="_blank"> <img src="@/assets/facebook_32.png"> </a></div>
-         <div><a href="#" target="_blank"> <img src="@/assets//line_32.png"> </a></div>
-         <div><a href="https://www.youtube.com/channel/UCQYtPx8eAiibthaLFwSPIxg" target="_blank"> <img src="@/assets/youtube_32.png"> </a></div>
+         <div><a href="https://www.facebook.com/groups/OKASOS/" target="_blank"> <img src="~static/facebook_32.png"> </a></div>
+         <div><a href="#" target="_blank"> <img src="~static/line_32.png"> </a></div>
+         <div><a href="https://www.youtube.com/channel/UCQYtPx8eAiibthaLFwSPIxg" target="_blank"> <img src="~static/youtube_32.png"> </a></div>
     </div>
   </div>
 </template>
@@ -53,79 +53,4 @@ export default {
 }
 </script>
 <style>
-html {
-  font-family: 'Noto Sans TC', sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-
-.scrolltoTop {
-  position: fixed;
-  right:20px;
-  bottom:50px;
-  width: 52px;
-  height: 52px;
-  line-height: 52px;
-  background-color: #007bff;
-  color: white;
-  border-radius: 52px;
-  cursor: pointer;
-  text-align: center;
-  z-index: 500;
-}
-
-.social_med div{
-  padding: 9px  5px;
-}
-/*日曆的CSS*/
-
-.day_box{
-  height: 60px;
-  width: auto;
-}
-
-.vc-day{
-    border-bottom: 1px dashed #d9efff;
-    border-right: 1px dashed #d9efff;
-    font-size: 6px;
-}
-@media screen and (max-width: 480px) {
- .social_med{
-  display: none;
-  }
-  .day_box div{
-  margin:0;
-}
-}
-@media screen and (min-width:1024px){
-  .social_med{
-  display: block;
-  position: fixed;
-  width: 52px;
-  height: 150px;
-  background-color: #c2dfff;
-  border-radius: 20px;
-  text-align: center;
-  right:20px;
-  bottom:120px;
-  z-index: 500;
-  }
-  .day_box div{
-  margin:5px;
-}
-}
 </style>

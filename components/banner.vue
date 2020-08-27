@@ -13,15 +13,15 @@
       @sliding-end="onSlideEnd"
     >
       <!-- Text slides with image -->
-      <b-carousel-slide img-src="@/assets/banner-1.jpg"></b-carousel-slide>
+      <b-carousel-slide img-src="~static/banner-1.jpg"></b-carousel-slide>
 
       <!-- Slides with custom text -->
-      <b-carousel-slide img-src="@/assets/banner-2.jpg"></b-carousel-slide>
+      <b-carousel-slide img-src="~static/banner-2.jpg"></b-carousel-slide>
 
       <!-- Slides with image only -->
-      <b-carousel-slide img-src="@/assets/banner-3.jpg"></b-carousel-slide>
-      <b-carousel-slide img-src="@/assets/banner-4.jpg"></b-carousel-slide>
-      <b-carousel-slide img-src="@/assets/banner-5.jpg"></b-carousel-slide>
+      <b-carousel-slide img-src="~static/banner-3.jpg"></b-carousel-slide>
+      <b-carousel-slide img-src="~static/banner-4.jpg"></b-carousel-slide>
+      <b-carousel-slide img-src="~static/banner-5.jpg"></b-carousel-slide>
     </b-carousel>
   </div>
 </template>
