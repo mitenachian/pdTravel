@@ -9,7 +9,6 @@
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-
 html {
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 16px;
@@ -21,15 +20,7 @@ html {
     box-sizing: border-box;
     overflow-x: hidden;
   }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-    margin: 0;
-  }
-  
-  
+
   .scrolltoTop {
     position: fixed;
     right:20px;
@@ -60,16 +51,7 @@ html {
       border-right: 1px dashed #d9efff;
       font-size: 6px;
   }
-  @media screen and (max-width: 480px) {
-   .social_med{
-    display: none;
-    }
-    .day_box div{
-    margin:0;
-  }
-  }
-  @media screen and (min-width:1024px){
-    .social_med{
+  .social_med{
     display: block;
     position: fixed;
     width: 52px;
@@ -81,7 +63,21 @@ html {
     bottom:120px;
     z-index: 500;
     }
+  @media screen and (max-width: 480px) {
+   .social_med{
+    display: none!important;
+    }
+    .day_box div{
+    margin:0;
+    }
+    /*測試中*/
+    div.social_med,div.social_med div  {
+      display: none!important;
+    }
+  }
+  @media screen and (min-width:1024px){
     .day_box div{
     margin:5px;
-  }
+    }
+    
   }
