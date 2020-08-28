@@ -168,7 +168,6 @@ export default {
 <style scoped>
 #home_content{
     margin: auto 40px;
-    font-family: 'Noto Sans TC', sans-serif;
 }
 .main_title{
     display: block;
