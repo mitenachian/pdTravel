@@ -1,5 +1,6 @@
 <template>
-  <div id="home_content">
+  <section id="home_content">
+      
       <div class="main_title">
           <h2> <b-icon icon="card-list"></b-icon>行程內容</h2>
       </div>
@@ -376,9 +377,7 @@
             <b-button block variant="primary">訂購行程去</b-button>
             <hr>
         </div>
-
-
-  </div>
+  </section>
 </template>
 <script>
   export default {

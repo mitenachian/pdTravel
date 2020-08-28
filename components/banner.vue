@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section id="bannerArea" >
     <b-carousel
       id="carousel-1"
       v-model="slide"
@@ -23,7 +23,7 @@
       <b-carousel-slide img-src="~/assets/banner-4.jpg"></b-carousel-slide>
       <b-carousel-slide img-src="~/assets/banner-5.jpg"></b-carousel-slide>
     </b-carousel>
-  </div>
+  </section>
 </template>
 
 <script>

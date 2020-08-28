@@ -1,5 +1,6 @@
 <template>
-  <div id="home_content">
+  <section id="home_content">
+      <b-container fluid>
       <div class="main_title">
           <h2> <b-icon icon="geo-alt"></b-icon>主打行程</h2>
       </div>
@@ -156,7 +157,8 @@
         </b-card>
     </b-card-group>-->
   </div>
-  </div>
+      </b-container>
+  </section>
 </template>
 <script>
 export default {

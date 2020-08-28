@@ -1,6 +1,6 @@
 <template>
-  <div id="footer">
-    <div id="bottom_link">
+  <section id="footerArea">
+    <b-container fluid  id="bottom_link">
       <li><a href="#">關於彭大家族</a></li>
       <li><a href="#">品牌理念</a></li>
       <li><a href="#">付款取貨</a></li>
@@ -8,7 +8,7 @@
       <li><a href="#">交易安全</a></li>
       <li><a href="#">意見回饋</a></li>
       <li><a href="#">檔案下載</a></li>
-    </div>
+    </b-container>
     <b-container fluid id="mid_footer">
       <b-row>
         <b-col cols="12" md="3" lg="3">
@@ -41,15 +41,16 @@
       </b-row>
     </b-container>
     <div class="copyright"> ©2020 PdTravel Copyright All rights reserved.</div>
-</div>
+</section>
 </template>
 
 <style scoped>
 
-#footer {
+#footerArea {
   font-family: 'Noto Sans TC', sans-serif;
   font-weight: 300;
   background: #eaf4f9;
+  width: 100%;
 }
 #bottom_link {
   width: 100%;

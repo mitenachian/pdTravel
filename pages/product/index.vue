@@ -1,5 +1,5 @@
 <template>
-  <div id="home_content">
+  <section id="home_content">
       <div class="main_title">
           <h2> <b-icon icon="geo-alt"></b-icon>精選行程列表</h2>
       </div>
@@ -119,7 +119,7 @@
             </b-row>
         </b-card>
         <!--行程分隔線-->
-  </div>
+  </section>
 </template>
 <script>
 export default {

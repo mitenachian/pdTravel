@@ -1,11 +1,9 @@
 <template>
-<div id="headerArea" >
-  <div>
+<section id="headerArea" >
     <b-nav align="right">
       <b-nav-item href="#"><b-icon icon="clipboard-check"></b-icon>訂單查詢</b-nav-item>
       <b-nav-item href="#"><b-icon icon="person-fill"></b-icon>會員登入</b-nav-item>
     </b-nav>
-  </div>
   <!-- As a link -->
   <b-navbar toggleable="sm"  type="dark" variant="primary">
     <b-navbar-brand>
@@ -69,7 +67,7 @@
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
-</div>
+</section>
 </template>
 <script>
 
@@ -87,6 +85,7 @@ export default {
   width:100%;      /* take up the full browser width */
   z-index:200;  /* high z index so other content scrolls underneath */
   height:113px;     /* define height for content */
+
 }
 .nav-item a:hover{
   text-decoration: underline;
@@ -100,18 +99,17 @@ a {
   font-size: 14px;
   background-color: #e2f2ff;
 }
-@media screen and (max-width: 480px) {
-  .navbar{
-    background-image: none;
-  }
-}
-@media screen and (min-width:1024px){
-  .navbar{
+.navbar{
     /*background-image: url('/travel_together.svg');*/
     background-image: url('../assets/travel_together.svg');
     background-repeat: no-repeat;
     background-position: 20% 0%;
     background-color: rgb(0, 160, 232) !important;
   }
+@media screen and (max-width: 1024px) {
+  .navbar{
+    background-image: none;
+  }
 }
+
 </style>

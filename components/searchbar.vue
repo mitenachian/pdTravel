@@ -1,5 +1,5 @@
 <template>
-<b-container  fluid="lg" class="w100">
+
     <div id="searchTerm" class="box_shadow">
         <b-row>
           <b-col sm="2">
@@ -33,7 +33,6 @@
           </b-col>
         </b-row>
     </div>
-</b-container>
 </template>
 <script>
   export default {
@@ -69,12 +68,9 @@ font-family: 'Noto Sans TC', sans-serif;
 margin: 40px auto;
 padding: 10px 30px;
 background: #EAF4F9;
-width: 100%;
 min-height: 120px;
 border-radius: 10px;
 }
-.w100{
-  max-width: 100%;
-}
+
 
 </style>
