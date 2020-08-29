@@ -125,8 +125,8 @@
           <h2> <b-icon icon="camera-reels-fill"></b-icon>精選影片</h2>
       </div>
   <div>
-    <!--<b-card-group >
-        <b-card border-variant="light" header="【彭大家族】沖繩好好玩系列_觀光篇-NO.001- 綜合版-20200301" class="text-center">
+    <b-card-group >
+        <b-card border-variant="light" header="【彭大家族】沖繩好好玩系列_觀光篇-NO.001" class="text-center">
             <b-card-text>
             <iframe width="300" height="200" src="https://www.youtube.com/embed/H_1vQB1VviU" 
             frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
@@ -140,21 +140,14 @@
             allowfullscreen></iframe>
             </b-card-text>
         </b-card>
-        <b-card border-variant="light" header="【彭大家族】沖繩好好玩系列_觀光篇-NO.001- 綜合版-20200301" class="text-center">
+        <b-card border-variant="light" header="【彭大家族】沖繩好好玩系列_觀光篇-NO.001" class="text-center">
             <b-card-text>
             <iframe width="300" height="200" src="https://www.youtube.com/embed/H_1vQB1VviU" 
             frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen></iframe>
             </b-card-text>
         </b-card>
-        <b-card border-variant="light" header="【彭大家族】沖繩好好玩系列_觀光篇-NO.001- 綜合版-20200301" class="text-center">
-            <b-card-text>
-            <iframe width="300" height="200" src="https://www.youtube.com/embed/H_1vQB1VviU" 
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen></iframe>
-            </b-card-text>
-        </b-card>
-    </b-card-group>-->
+    </b-card-group>
   </div>
       </b-container>
   </section>
