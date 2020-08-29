@@ -50,10 +50,6 @@
                                     <img src="~/assets/instagram-sketched.png"/>
                                     <img src="~/assets/line.png"/>
                                     <img src="~/assets/twitter.png"/>
-                                   <!--<img src="/facebook.png"/>
-                                    <img src="/instagram-sketched.png"/>
-                                    <img src="/line.png"/>
-                                    <img src="/twitter.png"/>-->
                                 </b-col>
                                 </div>
                             </b-row>
@@ -374,7 +370,7 @@
         <hr>
         <!--訂購去-->
         <div>
-            <b-button block variant="primary">訂購行程去</b-button>
+            <b-button block variant="primary" @click="order()">訂購行程去</b-button>
             <hr>
         </div>
   </section>
@@ -480,25 +476,6 @@ attributes: [
   }
 </script>
 <style scoped>
-#home_content{
-    margin: auto 40px;
-    font-family: 'Noto Sans TC', sans-serif;
-}
-.main_title{
-    display: block;
-    height: 80px;
-    padding:10px;
-    text-align: center;
-    font-family: 'Noto Sans TC', sans-serif;
-    color:#00A0E8;
-}
-.sub_title{
-    display: block;
-    color:#00A0E8;
-}
-.card{
-    margin-bottom:20px;
-}
 
 .detail_box1 {
     float: left;
@@ -554,15 +531,14 @@ td:first-child{
     text-align: center;
     color:#1b6a8f;
 }
-
-
+/*日曆的CSS */
 .left_border {
     border-left:#89d7fc dashed 1px;
     margin-left:30px;
     padding-left: 35px;
 }
 #other_date {
-    height: 620px;
+    height: 520px;
 }
 #other_date:target:before{
   display: block;
@@ -570,8 +546,4 @@ td:first-child{
   height: 116px;
   margin: -116px 0 0;
 }
-
-
-
-
 </style>

@@ -65,6 +65,34 @@ html {
     bottom:120px;
     z-index: 500;
     }
+  #home_content,#order_content,#order_content{
+      margin: auto 40px;
+      font-family: 'Noto Sans TC', sans-serif;
+  }
+  
+  .main_title{
+    display: block;
+    height: 80px;
+    padding:10px;
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    color:#00A0E8;
+  }
+
+  .sub_title{
+      display: block;
+      color:#00A0E8;
+  }
+  .card{
+      margin-bottom:20px;
+  }
+  .pd_20{
+    padding: 20px 20px;
+  }
+  .card:hover {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+}
   @media screen and (max-width: 480px) {
    .social_med{
     display: none!important;

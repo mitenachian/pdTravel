@@ -17,8 +17,3 @@ export default {
 }
 </script>
 
-<style scoped>
-#order_content{
-    font-family: 'Noto Sans TC', sans-serif;
-}
-</style>

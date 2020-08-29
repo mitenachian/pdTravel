@@ -124,7 +124,6 @@
         <div class="main_title">
           <h2> <b-icon icon="camera-reels-fill"></b-icon>精選影片</h2>
       </div>
-      
   <div>
     <!--<b-card-group >
         <b-card border-variant="light" header="【彭大家族】沖繩好好玩系列_觀光篇-NO.001- 綜合版-20200301" class="text-center">

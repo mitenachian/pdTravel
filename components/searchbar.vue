@@ -1,5 +1,5 @@
 <template>
-
+<b-container fluid>
     <div id="searchTerm" class="box_shadow">
         <b-row>
           <b-col sm="2">
@@ -29,10 +29,11 @@
             <b-form-input v-model="search_text" placeholder="輸入關鍵字"></b-form-input>
           </b-col>
           <b-col sm="2">
-           <b-button block variant="primary"  style="margin-top:30px;">送出搜尋</b-button>
+           <b-button block variant="primary"  style="margin-top:30px;">搜尋</b-button>
           </b-col>
         </b-row>
     </div>
+</b-container>
 </template>
 <script>
   export default {
@@ -45,7 +46,7 @@
         search_text: null,
         area_selected: null,
         area_options: [
-          { value: null, text: '選擇旅遊區域' },
+          { value: null, text: '旅遊區域' },
           { value: 'a', text: '東北亞' },
           { value: 'b', text: '東南亞' },
           { value: { C: '3PO' }, text: '澳洲' },
@@ -53,7 +54,7 @@
         ],
         dis_selected: null,
         dis_options: [
-          { value: null, text: '選擇旅遊目地' },
+          { value: null, text: '旅遊目地' },
           { value: 'a', text: '不限' },
           { value: 'b', text: '不限' },
           { value: { C: '3PO' }, text: '不限' },
@@ -69,7 +70,7 @@ margin: 40px auto;
 padding: 10px 30px;
 background: #EAF4F9;
 min-height: 120px;
-border-radius: 10px;
+border-radius: 5px;
 }
 
 

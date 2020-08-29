@@ -129,29 +129,9 @@ export default {
                 { name: 'product-product_details'}
             );
         }
-       
     }
-    
 }
 </script>
 <style scoped>
-#home_content{
-    margin: auto 40px;
-    font-family: 'Noto Sans TC', sans-serif;
-}
-.main_title{
-    display: block;
-    height: 80px;
-    padding:10px;
-    text-align: center;
-    font-family: 'Noto Sans TC', sans-serif;
-    color:#00A0E8;
-}
-.card{
-    margin-bottom:20px;
-}
-.card:hover {
-     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-     opacity: 0.8;
-}
+
 </style>

@@ -5,7 +5,7 @@
       <b-nav-item href="#"><b-icon icon="person-fill"></b-icon>會員登入</b-nav-item>
     </b-nav>
   <!-- As a link -->
-  <b-navbar toggleable="sm"  type="dark" variant="primary">
+  <b-navbar toggleable="md"  type="dark" variant="primary">
     <b-navbar-brand>
       <!--<nuxt-link to="/"><img src="/toplogo.svg" height="50px" alt=" 彭大家族旅遊社團"></nuxt-link>-->
       <nuxt-link to="/"><img src="~/assets/toplogo.svg" height="50px" alt=" 彭大家族旅遊社團"></nuxt-link>
@@ -76,7 +76,6 @@ export default {
 }
 </script>
 <style scoped>
-
 #headerArea{
   font-family: 'Noto Sans TC', sans-serif;
   position:sticky; 
@@ -85,15 +84,6 @@ export default {
   width:100%;      /* take up the full browser width */
   z-index:200;  /* high z index so other content scrolls underneath */
   height:113px;     /* define height for content */
-
-}
-.nav-item a:hover{
-  text-decoration: underline;
-}
-
-a {
-  text-decoration: none;
-  background-color: transparent;
 }
 .nav{
   font-size: 14px;
@@ -106,7 +96,7 @@ a {
     background-position: 20% 0%;
     background-color: rgb(0, 160, 232) !important;
   }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
   .navbar{
     background-image: none;
   }

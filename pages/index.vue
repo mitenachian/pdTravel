@@ -23,10 +23,3 @@ export default {
 
 }
 </script>
-
-<style>
-.links {
-  padding-top: 15px;
-}
-
-</style>
