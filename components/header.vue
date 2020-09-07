@@ -7,7 +7,6 @@
   <!-- As a link -->
   <b-navbar toggleable="md"  type="dark" variant="primary">
     <b-navbar-brand>
-      <!--<nuxt-link to="/"><img src="/toplogo.svg" height="50px" alt=" 彭大家族旅遊社團"></nuxt-link>-->
       <nuxt-link to="/"><img src="~/assets/toplogo.svg" height="50px" alt=" 彭大家族旅遊社團"></nuxt-link>
     </b-navbar-brand>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -15,54 +14,10 @@
     <b-collapse id="nav-collapse" is-nav>
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
-        <b-nav-item-dropdown  text="國外旅遊" right>
-          <b-dropdown-item to="/product/">東北亞demo</b-dropdown-item>
-          <b-dropdown-item href="#">東南亞</b-dropdown-item>
-          <b-dropdown-item href="#">歐洲</b-dropdown-item>
-          <b-dropdown-item href="#">大洋洲</b-dropdown-item>
-        </b-nav-item-dropdown>
-        <b-nav-item-dropdown text="國內旅遊" right>
-          <b-dropdown-item href="#" disabled>---本島---</b-dropdown-item>
-          <b-dropdown-item href="#">北部</b-dropdown-item>
-          <b-dropdown-item href="#">中島</b-dropdown-item>
-          <b-dropdown-item href="#">南島</b-dropdown-item>
-          <b-dropdown-item href="#">東部</b-dropdown-item>
-          <div class="dropdown-divider"></div>
-          <b-dropdown-item href="#" disabled>---離島---</b-dropdown-item>
-          <b-dropdown-item href="#">金門</b-dropdown-item>
-          <b-dropdown-item href="#">澎湖</b-dropdown-item>
-        </b-nav-item-dropdown>
-        <b-nav-item-dropdown text="訂房" right>
-          <b-dropdown-item href="#">國內訂房</b-dropdown-item>
-          <b-dropdown-item href="#">國外訂房</b-dropdown-item>
-        </b-nav-item-dropdown>
-        <b-nav-item-dropdown  text="票券/交通" right>
-          <b-dropdown-item href="#">包車</b-dropdown-item>
-          <b-dropdown-item href="#">租車</b-dropdown-item>
-          <b-dropdown-item href="#">接送機</b-dropdown-item>
-        </b-nav-item-dropdown>
-        <b-nav-item-dropdown  text="票券/交通" right>
-          <b-dropdown-item href="#">包車</b-dropdown-item>
-          <b-dropdown-item href="#">租車</b-dropdown-item>
-          <b-dropdown-item href="#">接送機</b-dropdown-item>
-        </b-nav-item-dropdown>
-        <b-nav-item-dropdown  text="機票" right>
-          <b-dropdown-item href="#">個人機票</b-dropdown-item>
-        </b-nav-item-dropdown>
-        <b-nav-item-dropdown  text="旅平險" right>
-          <b-dropdown-item href="#">星光產險</b-dropdown-item>
-          <b-dropdown-item href="#">國泰產險</b-dropdown-item>
-        </b-nav-item-dropdown>
-        <b-nav-item-dropdown  text="推薦行程" right>
-          <b-dropdown-item href="#">滑雪</b-dropdown-item>
-          <b-dropdown-item href="#">賞鯨</b-dropdown-item>
-          <b-dropdown-item href="#">包車/一日遊</b-dropdown-item>
-        </b-nav-item-dropdown>
-        <b-nav-item-dropdown class="white" text="彭大家族集團" right>
-          <b-dropdown-item href="#">彭大家族旅行社</b-dropdown-item>
-          <b-dropdown-item href="#">彭大家族購物商成</b-dropdown-item>
-          <b-dropdown-item href="#">彭大家族株式會社</b-dropdown-item>
-          <b-dropdown-item href="#">彭大旅遊保險</b-dropdown-item>
+        <b-nav-item-dropdown v-for="items in menu" :key="items.link_id"  :text="items.link_title" right>
+          <b-dropdown-item v-for="sub_items in items.children" :key="sub_items.link_id" :to="sub_items.route_name">
+            {{sub_items.link_title}}
+          </b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
     </b-collapse>
@@ -70,9 +25,19 @@
 </section>
 </template>
 <script>
-
+import menu_data from 'static/demo_navData.json'
 export default {
-
+ data() {
+      return {
+        menu:[],
+      }
+ },
+  async fetch() {
+      this.menu = menu_data;
+      // this.posts = await this.$http.$get(
+      //   'https://jsonplaceholder.typicode.com/posts'
+      // )
+  }
 }
 </script>
 <style scoped>

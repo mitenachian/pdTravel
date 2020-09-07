@@ -4,7 +4,7 @@
       <div class="main_title">
           <h2> <b-icon icon="geo-alt"></b-icon>主打行程</h2>
       </div>
-        <b-card no-body class="overflow-hidden">
+        <b-card no-body class="overflow-hidden prd_item">
             <b-row no-gutters>
             <b-col md="4">
                 <b-card-img src="https://picsum.photos/400/300?random=15" alt="Image" class="rounded-0"></b-card-img>
@@ -33,7 +33,7 @@
             </b-row>
         </b-card>
         <!--行程分隔線-->
-        <b-card no-body class="overflow-hidden">
+        <b-card no-body class="overflow-hidden prd_item">
             <b-row no-gutters>
             <b-col md="4">
                 <b-card-img src="https://picsum.photos/400/300?random=7" alt="Image" class="rounded-0"></b-card-img>
@@ -62,7 +62,7 @@
             </b-row>
         </b-card>
         <!--行程分隔線-->
-        <b-card no-body class="overflow-hidden">
+        <b-card no-body class="overflow-hidden prd_item">
             <b-row no-gutters>
             <b-col md="4">
                 <b-card-img src="https://picsum.photos/400/300?random=5" alt="Image" class="rounded-0"></b-card-img>
@@ -91,7 +91,7 @@
             </b-row>
         </b-card>
         <!--行程分隔線-->
-        <b-card no-body class="overflow-hidden">
+        <b-card no-body class="overflow-hidden prd_item">
             <b-row no-gutters>
             <b-col md="4">
                 <b-card-img src="https://picsum.photos/400/300?random=10" alt="Image" class="rounded-0"></b-card-img>
@@ -125,29 +125,29 @@
           <h2> <b-icon icon="camera-reels-fill"></b-icon>精選影片</h2>
       </div>
   <div>
-    <b-card-group >
-        <b-card border-variant="light" header="【彭大家族】沖繩好好玩系列_觀光篇-NO.001" class="text-center">
-            <b-card-text>
-            <iframe width="300" height="200" src="https://www.youtube.com/embed/H_1vQB1VviU" 
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen></iframe>
-            </b-card-text>
-        </b-card>
-        <b-card border-variant="light" header="【彭大家族】沖繩景點篇 NO 001 沖繩美麗海水族館" class="text-center">
-            <b-card-text>
-            <iframe width="300" height="200" src="https://www.youtube.com/embed/SiOdzRIi_EE" 
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen></iframe>
-            </b-card-text>
-        </b-card>
-        <b-card border-variant="light" header="【彭大家族】沖繩好好玩系列_觀光篇-NO.001" class="text-center">
-            <b-card-text>
-            <iframe width="300" height="200" src="https://www.youtube.com/embed/H_1vQB1VviU" 
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen></iframe>
-            </b-card-text>
-        </b-card>
-    </b-card-group>
+     <b-row>
+         <b-col md="4">
+            <b-card border-variant="light" header="【彭大家族】沖繩好好玩系列_觀光篇-NO.001" class="text-center">
+                <b-card-text>
+                <iframe src="https://www.youtube.com/embed/H_1vQB1VviU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </b-card-text>
+            </b-card>
+         </b-col>
+         <b-col md="4">
+            <b-card border-variant="light" header="【彭大家族】沖繩好好玩系列_觀光篇-NO.001" class="text-center">
+                <b-card-text>
+                <iframe src="https://www.youtube.com/embed/H_1vQB1VviU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </b-card-text>
+            </b-card>
+         </b-col>
+         <b-col md="4">
+            <b-card border-variant="light" header="【彭大家族】沖繩好好玩系列_觀光篇-NO.001" class="text-center">
+                <b-card-text>
+                <iframe src="https://www.youtube.com/embed/H_1vQB1VviU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </b-card-text>
+            </b-card>
+         </b-col>
+    </b-row>
   </div>
       </b-container>
   </section>
@@ -172,7 +172,7 @@ export default {
 .card{
     margin-bottom:20px;
 }
-.card:hover {
+.prd_item:hover {
      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
      opacity: 0.8;
 }
