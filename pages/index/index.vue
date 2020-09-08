@@ -59,7 +59,7 @@
   </section>
 </template>
 <script>
-import prd_data from 'static/demo_prdData.json'
+import prd_data from '~/assets/demo_prdData.json'
 export default {
  data() {
       return {

@@ -25,7 +25,7 @@
 </section>
 </template>
 <script>
-import menu_data from 'static/demo_navData.json'
+import menu_data from '~/assets/demo_navData.json'
 export default {
  data() {
       return {
