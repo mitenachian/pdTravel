@@ -25,19 +25,14 @@
 </section>
 </template>
 <script>
-import menu_data from '~/assets/demo_navData.json'
+import menu_data from 'static/data/demo_navData.json'
 export default {
  data() {
       return {
-        menu:[],
+        menu:menu_data,
       }
  },
-  async fetch() {
-      this.menu = menu_data;
-      // this.posts = await this.$http.$get(
-      //   'https://jsonplaceholder.typicode.com/posts'
-      // )
-  }
+  
 }
 </script>
 <style scoped>

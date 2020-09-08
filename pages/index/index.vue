@@ -59,19 +59,14 @@
   </section>
 </template>
 <script>
-import prd_data from '~/assets/demo_prdData.json'
+import prd_data from 'static/data/demo_prdData.json'
 export default {
  data() {
       return {
-        prd_list:[],
+        prd_list:prd_data,
       }
  },
-  async fetch() {
-      this.prd_list = prd_data;
-      // this.posts = await this.$http.$get(
-      //   'https://jsonplaceholder.typicode.com/posts'
-      // )
-  }
+
 }
 </script>
 <style scoped>
