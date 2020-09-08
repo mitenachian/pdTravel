@@ -4,27 +4,20 @@
       <div class="main_title">
           <h2> <b-icon icon="geo-alt"></b-icon>主打行程</h2>
       </div>
-        <b-card no-body class="overflow-hidden prd_item">
+      <!--行程card分隔線-->
+        <b-card no-body class="overflow-hidden prd_item" v-for="item in prd_list" :key="item.prd_id">
             <b-row no-gutters>
             <b-col md="4">
-                <b-card-img src="https://picsum.photos/400/300?random=15" alt="Image" class="rounded-0"></b-card-img>
+                <b-card-img :src="item.prd_img" alt="Image" class="rounded-0"></b-card-img>
             </b-col>
             <b-col md="8">
-                <b-card-body title="花東縱谷FUN鬆玩">
+                <b-card-body :title="item.prd_title">
                 <b-card-text>
                  <div>
-                 <p><strong>♦</strong><strong>️</strong><strong>行程景點：</strong><br>
-                <strong>【光復糖廠】、【池上便當創始店】、【伯朗大道】、台東熱氣球嘉年華】<br>
-                【多良車站】、【太麻里平交道】、【台東夜市】、【加路蘭】、【都歷海灘】<br>
-                【三仙台】、【八仙洞】、【北緯23.5度線】</strong></p>
-
-                <p><strong>♦</strong><strong>️</strong><strong>餐食安排：</strong><br>
-                <strong>【番割田甕缸雞】、【海鮮風味餐】、【東河肉包】、【隨機應變餐】</strong></p>
-
-                <p><strong>♦</strong><strong>️住宿酒店：</strong><strong>F Hotel</strong><strong>台東知本館(兩人一室)</strong></p>
+                     <div v-html="item.prd_content"></div>
                 <div class="clearfix"></div>
                     <div>
-                        <b-button block variant="primary">$9,999起</b-button>
+                        <b-button block variant="primary">{{ item.prd_price }}起</b-button>
                     </div>
                 </div>
                 </b-card-text>
@@ -32,94 +25,7 @@
             </b-col>
             </b-row>
         </b-card>
-        <!--行程分隔線-->
-        <b-card no-body class="overflow-hidden prd_item">
-            <b-row no-gutters>
-            <b-col md="4">
-                <b-card-img src="https://picsum.photos/400/300?random=7" alt="Image" class="rounded-0"></b-card-img>
-            </b-col>
-            <b-col md="8">
-                <b-card-body title="花東縱谷FUN鬆玩">
-                <b-card-text>
-                 <div>
-                 <p><strong>♦</strong><strong>️</strong><strong>行程景點：</strong><br>
-                <strong>【光復糖廠】、【池上便當創始店】、【伯朗大道】、台東熱氣球嘉年華】<br>
-                【多良車站】、【太麻里平交道】、【台東夜市】、【加路蘭】、【都歷海灘】<br>
-                【三仙台】、【八仙洞】、【北緯23.5度線】</strong></p>
-
-                <p><strong>♦</strong><strong>️</strong><strong>餐食安排：</strong><br>
-                <strong>【番割田甕缸雞】、【海鮮風味餐】、【東河肉包】、【隨機應變餐】</strong></p>
-
-                <p><strong>♦</strong><strong>️住宿酒店：</strong><strong>F Hotel</strong><strong>台東知本館(兩人一室)</strong></p>
-                <div class="clearfix"></div>
-                    <div>
-                        <b-button block variant="primary">$8,888起</b-button>
-                    </div>
-                </div>
-                </b-card-text>
-                </b-card-body>
-            </b-col>
-            </b-row>
-        </b-card>
-        <!--行程分隔線-->
-        <b-card no-body class="overflow-hidden prd_item">
-            <b-row no-gutters>
-            <b-col md="4">
-                <b-card-img src="https://picsum.photos/400/300?random=5" alt="Image" class="rounded-0"></b-card-img>
-            </b-col>
-            <b-col md="8">
-                <b-card-body title="花東縱谷FUN鬆玩">
-                <b-card-text>
-                 <div>
-                 <p><strong>♦</strong><strong>️</strong><strong>行程景點：</strong><br>
-                <strong>【光復糖廠】、【池上便當創始店】、【伯朗大道】、台東熱氣球嘉年華】<br>
-                【多良車站】、【太麻里平交道】、【台東夜市】、【加路蘭】、【都歷海灘】<br>
-                【三仙台】、【八仙洞】、【北緯23.5度線】</strong></p>
-
-                <p><strong>♦</strong><strong>️</strong><strong>餐食安排：</strong><br>
-                <strong>【番割田甕缸雞】、【海鮮風味餐】、【東河肉包】、【隨機應變餐】</strong></p>
-
-                <p><strong>♦</strong><strong>️住宿酒店：</strong><strong>F Hotel</strong><strong>台東知本館(兩人一室)</strong></p>
-                <div class="clearfix"></div>
-                    <div>
-                        <b-button block variant="primary">$8,888起</b-button>
-                    </div>
-                </div>
-                </b-card-text>
-                </b-card-body>
-            </b-col>
-            </b-row>
-        </b-card>
-        <!--行程分隔線-->
-        <b-card no-body class="overflow-hidden prd_item">
-            <b-row no-gutters>
-            <b-col md="4">
-                <b-card-img src="https://picsum.photos/400/300?random=10" alt="Image" class="rounded-0"></b-card-img>
-            </b-col>
-            <b-col md="8">
-                <b-card-body title="花東縱谷FUN鬆玩">
-                <b-card-text>
-                 <div>
-                 <p><strong>♦</strong><strong>️</strong><strong>行程景點：</strong><br>
-                <strong>【光復糖廠】、【池上便當創始店】、【伯朗大道】、台東熱氣球嘉年華】<br>
-                【多良車站】、【太麻里平交道】、【台東夜市】、【加路蘭】、【都歷海灘】<br>
-                【三仙台】、【八仙洞】、【北緯23.5度線】</strong></p>
-
-                <p><strong>♦</strong><strong>️</strong><strong>餐食安排：</strong><br>
-                <strong>【番割田甕缸雞】、【海鮮風味餐】、【東河肉包】、【隨機應變餐】</strong></p>
-
-                <p><strong>♦</strong><strong>️住宿酒店：</strong><strong>F Hotel</strong><strong>台東知本館(兩人一室)</strong></p>
-                <div class="clearfix"></div>
-                    <div>
-                        <b-button block variant="primary">$8,888起</b-button>
-                    </div>
-                </div>
-                </b-card-text>
-                </b-card-body>
-            </b-col>
-            </b-row>
-        </b-card>
-        <!--行程分隔線-->
+        <!--行程card分隔線-->
         <hr>
         <div class="main_title">
           <h2> <b-icon icon="camera-reels-fill"></b-icon>精選影片</h2>
@@ -153,8 +59,19 @@
   </section>
 </template>
 <script>
+import prd_data from 'static/demo_prdData.json'
 export default {
-    
+ data() {
+      return {
+        prd_list:[],
+      }
+ },
+  async fetch() {
+      this.prd_list = prd_data;
+      // this.posts = await this.$http.$get(
+      //   'https://jsonplaceholder.typicode.com/posts'
+      // )
+  }
 }
 </script>
 <style scoped>
