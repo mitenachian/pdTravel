@@ -15,7 +15,7 @@
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
         <b-nav-item-dropdown v-for="items in menu" :key="items.link_id"  :text="items.link_title" right>
-          <b-dropdown-item v-for="sub_items in items.children" :key="sub_items.link_id" :to="sub_items.route_name">
+          <b-dropdown-item v-for="sub_items in items.children" :key="sub_items.link_id" :to="sub_items.route_path">
             {{sub_items.link_title}}
           </b-dropdown-item>
         </b-nav-item-dropdown>
