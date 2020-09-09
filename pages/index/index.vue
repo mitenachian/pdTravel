@@ -17,7 +17,7 @@
                      <div v-html="item.prd_content"></div>
                 <div class="clearfix"></div>
                     <div>
-                        <b-button block variant="primary">{{ item.prd_price }}起</b-button>
+                        <b-button block variant="primary"  @click="linkTo()">{{ item.prd_price }}起</b-button>
                     </div>
                 </div>
                 </b-card-text>
@@ -66,7 +66,13 @@ export default {
         prd_list:prd_data,
       }
  },
-
+methods:{
+    linkTo(){
+        this.$router.push(
+            { name: 'product-product_details'}
+        );
+    }
+}
 }
 </script>
 <style scoped>
