@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/order/order_form", {data:[{}],fetch:[],mutations:void 0});
